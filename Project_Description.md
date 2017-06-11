@@ -88,7 +88,7 @@ fact that we young people as movie fanatics are already aqquainted to.
 
     ggplot(movies, aes(y = imdb_rating , x = genre)) + geom_boxplot(fill = "#e6f3ff") + coord_flip() + labs(title="Distribution of audience ratings on IMDB", y = "IMDB Rating(out of 10)", x = "Genre") + theme_minimal()
 
-![](test_files/figure-markdown_strict/unnamed-chunk-2-1.png)
+
 ![](https://github.com/SauravDeb/Explanatory-Data-Analysis-and-Prediction-on-IMDB-dataset/blob/master/Distributtion%20of%20audience%20ratings%20on%20IMDB.png)
 The box corresponding to the "Documentaries" genre can be seen as having
 the highest median of audience ratings and "Horror" the lowest.
@@ -127,7 +127,7 @@ rated.
 
     ggplot(movies, aes(y = audience_score , x = genre)) + geom_boxplot(fill = "#e6f3ff") + coord_flip() + labs(title="Distribution of audience score on Rotten Tomatoes", y = "Audience Score(in %)", x = "Genre") + theme_minimal()
 
-![](test_files/figure-markdown_strict/unnamed-chunk-4-1.png)
+
 ![](https://github.com/SauravDeb/Explanatory-Data-Analysis-and-Prediction-on-IMDB-dataset/blob/master/Distribution%20od%20audience%20score%20on%20Rotten%20Tomatoes.png)
 The box corresponding to the "Documentaries" genre can be seen as having
 the highest median of audience ratings and "Horror" the lowest.
@@ -233,17 +233,17 @@ a parsimonious model for the prediction of audience scores.
 
     ## Warning: Removed 1 rows containing missing values (geom_point).
 
-![](test_files/figure-markdown_strict/unnamed-chunk-9-1.png)
+
 ![](https://github.com/SauravDeb/Explanatory-Data-Analysis-and-Prediction-on-IMDB-dataset/blob/master/PlotAudi.png)
 
     ggplot(model, aes(y=.resid,x= .fitted)) + geom_jitter() + geom_hline( yintercept = 0, linetype = "dashed") + labs(title = "Resdiduals plot", x = "Fitted Values", y = "Residuals") + theme_minimal()
 
-![](test_files/figure-markdown_strict/unnamed-chunk-10-1.png)
+
 ![](https://github.com/SauravDeb/Explanatory-Data-Analysis-and-Prediction-on-IMDB-dataset/blob/master/ResPlot.png)
 
     ggplot(model, aes(.resid)) + geom_histogram(binwidth = 10, fill = "#e6f3ff", color = "black") + theme_minimal() + labs(title = "Distribution of Residuals", x = "Residuals", y = "Count")
 
-![](test_files/figure-markdown_strict/unnamed-chunk-11-1.png)
+
 ![](https://github.com/SauravDeb/Explanatory-Data-Analysis-and-Prediction-on-IMDB-dataset/blob/master/DistRes.png)
 
 **Interpretation of Coefficients**
