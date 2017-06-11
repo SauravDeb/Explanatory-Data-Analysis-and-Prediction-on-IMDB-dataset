@@ -270,9 +270,9 @@ Part 5: Prediction
 
 We wanted to predict the audience score for a new movie that has not
 been used to fit the model. For the recent release of the DC-franchise
-movie âWonder Woman(2017)â we extracted the runtime, critics score
+movie __Wonder Woman(2017)__ we extracted the runtime, critics score
 and audience score from IMDB and Rotten tomatoes,the genre was set to
-âAction & Adventureâ.
+__Action & Adventure__.
 
 The real and the predicted audience score were 92% each, and a
 confidence interval between 51.52 and 107.11 was calculated. It means
