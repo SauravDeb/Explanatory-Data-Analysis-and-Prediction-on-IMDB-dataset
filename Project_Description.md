@@ -265,7 +265,7 @@ Section.
 
 ------------------------------------------------------------------------
 
-Part 5: Prediction
+ Prediction
 ------------------
 
 We wanted to predict the audience score for a new movie that has not
@@ -287,8 +287,7 @@ percentage(i.e 92% in this case).
     ## 1 79.32759 51.54167 107.1135
 
 ------------------------------------------------------------------------
-
-Part 6: Conclusion
+ Conclusion
 ------------------
 
 Determining the popularity of a movie is not simple task. The intrinsic
